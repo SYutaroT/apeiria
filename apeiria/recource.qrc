@@ -1,0 +1,20 @@
+<RCC>
+  <qresource prefix="re">
+    <file>あきれ.png</file>
+    <file>いかり.png</file>
+    <file>おどろき.png</file>
+    <file>かなしい.png</file>
+    <file>こまる.png</file>
+    <file>すごい.png</file>
+    <file>すごくてれる.png</file>
+    <file>すこしおどろき.png</file>
+    <file>デフォルト.png</file>
+    <file>てれる.png</file>
+    <file>とまどい.png</file>
+    <file>ネガティブ.png</file>
+    <file>ねむい.png</file>
+    <file>ポジティブ.png</file>
+    <file>ほほえみ.png</file>
+    <file>ゆううつ.png</file>
+  </qresource>
+</RCC>
