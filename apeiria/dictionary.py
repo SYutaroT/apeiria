@@ -1,3 +1,4 @@
+# 辞書を作成するAPI
 import patternItem
 import re
 import analyzer
@@ -12,7 +13,7 @@ class Dictionary(object):
         self.template = self.makeTemplateDictionary()
         self.markovsentence = self.makeMarkovDictionary()
 
-    def makeRandomList(self):
+    def makeRandomList(self):  # ランダムに出力する言葉の辞書
         rfile = open("apeiria/dics/random.txt",
                      "r", encoding="utf-8")
         r_lines = rfile.readlines()
@@ -24,7 +25,7 @@ class Dictionary(object):
                 randomList.append(str)
         return randomList
 
-    def makePatternDictionary(self):
+    def makePatternDictionary(self):  # 定型文の辞書
         pfile = open("apeiria/dics/pattern.txt",
                      "r", encoding="utf-8")
         p_lines = pfile.readlines()
@@ -40,7 +41,7 @@ class Dictionary(object):
             patternItemList.append(patternItem.PatternItem(ptn, prs))
         return patternItemList
 
-    def makeTemplateDictionary(self):
+    def makeTemplateDictionary(self):  # テンプレワードの辞書
         tfile = open("apeiria/dics/template.txt",
                      "r", encoding="utf-8")
         t_lines = tfile.readlines()
@@ -58,7 +59,7 @@ class Dictionary(object):
             templateDictionary[count].append(tempstr)
         return templateDictionary
 
-    def makeMarkovDictionary(self):
+    def makeMarkovDictionary(self):  # マルコフ辞書
         sentences = []
         mark = markov.Markov()
         text = mark.make()
@@ -68,7 +69,7 @@ class Dictionary(object):
             sentences.remove("")
         return sentences
 
-    def study(self, input, parts):
+    def study(self, input, parts):  # 学習則
         input = input.rstrip("\n")
         self.study_random(input)
         self.study_pattern(input, parts)
