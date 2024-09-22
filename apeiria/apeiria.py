@@ -25,18 +25,19 @@ class Apeiria(object):
         self.emotion.update(input)
         parts = analyzer.analyze(input)
         x = random.randint(1, 100)
+        # 出力するパターンの確率
         if x <= 85:
-            self.responder = self.res_pattern
+            self.responder = self.res_pattern  # パターン辞書の確率
         elif 80 <= x <= 85:
-            self.responder = self.res_template
+            self.responder = self.res_template  # テンプレ辞書の確率
         elif 86 <= x <= 90:
-            self.responder = self.res_random
+            self.responder = self.res_random  # ランダム辞書の確率
         elif 91 <= x <= 95:
-            self.responder = self.res_markov
+            self.responder = self.res_markov  # マルコフ辞書の確率
         else:
-            self.responder = self.res_repeat
+            self.responder = self.res_repeat  # オウム返しの確率
         resp = self.responder.response(input, self.emotion.mood, parts)
-        fc = patternItem.response_face.face_check_num(self, resp)
+        fc = patternItem.response_face.face_check_num(self, resp)  # 表情のパターン
         resp2 = patternItem.response_face.face_check(self, resp)
         self.dictionary.study(input, parts)
         print(resp2)
@@ -56,7 +57,7 @@ class Apeiria(object):
         return self.name
 
 
-class Emotion:
+class Emotion:  # アペイリアの感情
     MOOD_MIN = -15
     MOOD_MAX = 15
     MOOD_RECOVERY = 0.5
