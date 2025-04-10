@@ -3,60 +3,37 @@ import patternItem
 import re
 import analyzer
 import markov
-
+from pathlib import Path
 
 class Dictionary(object):
-
     def __init__(self):
+        self.base_path = Path(__file__).resolve().parent / "dics"  # ← これを共通で使う
         self.random = self.makeRandomList()
         self.pattern = self.makePatternDictionary()
         self.template = self.makeTemplateDictionary()
         self.markovsentence = self.makeMarkovDictionary()
 
-    def makeRandomList(self):  # ランダムに出力する言葉の辞書
-        rfile = open("apeiria/dics/random.txt",
-                     "r", encoding="utf-8")
-        r_lines = rfile.readlines()
-        rfile.close()
-        randomList = []
-        for line in r_lines:
-            str = line.rstrip("\n")
-            if (str != ''):
-                randomList.append(str)
+    def makeRandomList(self):
+        rfile_path = self.base_path / "random.txt"
+        with open(rfile_path, encoding="utf-8") as rfile:
+            r_lines = rfile.readlines()
+        randomList = [line.rstrip("\n") for line in r_lines if line.strip()]
         return randomList
 
-    def makePatternDictionary(self):  # 定型文の辞書
-        pfile = open("apeiria/dics/pattern.txt",
-                     "r", encoding="utf-8")
-        p_lines = pfile.readlines()
-        pfile.close()
-        new_lines = []
-        for line in p_lines:
-            str = line.rstrip("\n")
-            if (str != ''):
-                new_lines.append(str)
-        patternItemList = []
-        for line in new_lines:
-            ptn, prs = line.split('\t')
-            patternItemList.append(patternItem.PatternItem(ptn, prs))
-        return patternItemList
+    def makePatternDictionary(self):
+        pfile_path = self.base_path / "pattern.txt"
+        with open(pfile_path, encoding="utf-8") as pfile:
+            p_lines = [line.rstrip("\n") for line in pfile if line.strip()]
+        return [patternItem.PatternItem(*line.split('\t')) for line in p_lines]
 
-    def makeTemplateDictionary(self):  # テンプレワードの辞書
-        tfile = open("apeiria/dics/template.txt",
-                     "r", encoding="utf-8")
-        t_lines = tfile.readlines()
-        tfile.close()
-        new_t_lines = []
-        for line in t_lines:
-            str = line.rstrip("\n")
-            if (str != ""):
-                new_t_lines.append(str)
+    def makeTemplateDictionary(self):
+        tfile_path = self.base_path / "template.txt"
+        with open(tfile_path, encoding="utf-8") as tfile:
+            t_lines = [line.rstrip("\n") for line in tfile if line.strip()]
         templateDictionary = {}
-        for line in new_t_lines:
+        for line in t_lines:
             count, tempstr = line.split('\t')
-            if not count in templateDictionary:
-                templateDictionary[count] = []
-            templateDictionary[count].append(tempstr)
+            templateDictionary.setdefault(count, []).append(tempstr)
         return templateDictionary
 
     def makeMarkovDictionary(self):  # マルコフ辞書
@@ -105,21 +82,22 @@ class Dictionary(object):
                 self.template[count] = []
             if not tempstr in self.template[count]:
                 self.template[count].append(tempstr)
-
     def save(self):
-        for index, element in enumerate(self.random):
-            self.random[index] = element+"\n"
-        with open("apeiria/dics/random.txt", "w", encoding="utf-8") as f:
-            f.writelines(self.random)
-        pattern = []
-        for ptn_item in self.pattern:
-            pattern.append(ptn_item.make_line()+"\n")
-        with open("apeiria/dics/pattern.txt", "w", encoding="utf-8") as f:
-            f.writelines(pattern)
-        templist = []
-        for key, val in self.template.items():
-            for v in val:
-                templist.append(key+"\t"+v+"\n")
-        templist.sort()
-        with open("apeiria/dics/template.txt", "w", encoding="utf-8") as f:
-            f.writelines(templist)
+        # random.txt
+        rfile_path = self.base_path / "random.txt"
+        with open(rfile_path, "w", encoding="utf-8") as f:
+            f.writelines([line + "\n" for line in self.random])
+
+        # pattern.txt
+        pfile_path = self.base_path / "pattern.txt"
+        with open(pfile_path, "w", encoding="utf-8") as f:
+            f.writelines([ptn.make_line() + "\n" for ptn in self.pattern])
+
+        # template.txt
+        tfile_path = self.base_path / "template.txt"
+        lines = []
+        for key, vals in self.template.items():
+            for v in vals:
+                lines.append(f"{key}\t{v}\n")
+        with open(tfile_path, "w", encoding="utf-8") as f:
+            f.writelines(sorted(lines))

@@ -1,0 +1,12 @@
+janome
+responder
+requests
+pynput
+python-vlc
+SpeechRecognition
+PyQt5
+pyautogui
+markovify
+playsound==1.2.2
+pykakasi
+yt-dlp

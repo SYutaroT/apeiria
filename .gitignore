@@ -1,1 +1,6 @@
-apeiria/voice/4ttenandesu.wav
+# Python キャッシュ
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*venv
