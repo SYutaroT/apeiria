@@ -3,7 +3,7 @@ from PyQt5.QtCore import Qt
 import shogi
 import sys
 from collections import Counter
-
+import subprocess
 class ShogiBoard(QWidget):
     def __init__(self):
         super().__init__()
@@ -40,16 +40,43 @@ class ShogiBoard(QWidget):
         self.quit_button.setStyleSheet("font-size: 16px;")
         self.quit_button.clicked.connect(QApplication.quit)
         self.main_layout.addWidget(self.quit_button, alignment=Qt.AlignCenter)
+        # AIに指させるボタン
+        self.eval_button = QPushButton("AIに考えさせる")
+        self.eval_button.setFixedSize(150, 40)
+        self.eval_button.setStyleSheet("font-size: 16px;")
+        print("🔍 現在の盤面SFEN:", self.board.sfen())
+        print("🔍 現在のmoves:", [m.usi() for m in self.board.move_stack])
 
+        self.eval_button.clicked.connect(self.evaluate_bestmove)
+        self.main_layout.addWidget(self.eval_button, alignment=Qt.AlignCenter)
     def init_board(self):
+        # 筋（1〜9）ラベル
+        for col in range(9):
+            label = QLabel(str(9 - col))
+            label.setAlignment(Qt.AlignCenter)
+            label.setFixedSize(60, 20)
+            self.grid.addWidget(label, 0, col + 1)
+
+        # 段（a〜i）ラベル（逆順で上から a）
+        row_labels = "abcdefghi"[::-1]
+        for row in range(9):
+            label = QLabel(row_labels[row])
+            label.setAlignment(Qt.AlignCenter)
+            label.setFixedSize(20, 60)
+            self.grid.addWidget(label, row + 1, 0)
+
+        # 将棋盤のボタン配置
         for row in range(9):
             for col in range(9):
                 btn = self.buttons[row][col]
                 btn.setFixedSize(60, 60)
                 btn.setStyleSheet("font-size: 18px;")
                 btn.clicked.connect(lambda _, r=row, c=col: self.cell_clicked(r, c))
-                self.grid.addWidget(btn, row, col)
+                self.grid.addWidget(btn, row + 1, col + 1)
+
         self.update_board()
+
+
 
     def update_board(self):
         for row in range(9):
@@ -187,6 +214,71 @@ class ShogiBoard(QWidget):
         msg.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
         ret = msg.exec_()
         return ret == QMessageBox.Yes
+#--------------------------------------------------
+    def evaluate_bestmove(self):
+        try:
+            sfen_raw = self.board.sfen()
+            parts = sfen_raw.split()
+
+            if len(parts) != 4:
+                raise ValueError(f"SFENの形式が不正です: {sfen_raw}")
+
+            board_part, turn_part, hand_part, _ = parts
+            move_number = str(self.board.move_number)
+
+            sfen_6 = f"{board_part} {turn_part} {hand_part} {move_number}"
+            moves = [m.usi() for m in self.board.move_stack]
+            move_cmd = f"position sfen {sfen_6} moves {' '.join(moves)}" if moves else f"position sfen {sfen_6}"
+
+            # 4. subprocessでAI起動
+            proc = subprocess.Popen(
+                [sys.executable, "mcts_player.py"],
+                stdin=subprocess.PIPE,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                encoding="utf-8",
+                bufsize=1
+            )
+
+            def send(cmd):
+                print("🟡送信:", cmd)
+                proc.stdin.write(cmd + "\n")
+                proc.stdin.flush()
+
+            def recv_until(keyword):
+                while True:
+                    line = proc.stdout.readline().strip()
+                    print("[AI]", line)
+                    if line == keyword:
+                        break
+            print("🧪 sfen_raw from board.sfen():", self.board.sfen())
+            print("🧪 move_number:", self.board.move_number)
+            print("🧪 sfen_6:", sfen_6)
+            print("🧪 moves:", moves)
+            print("🧪 move_cmd:", move_cmd)
+
+            send("usi")
+            recv_until("usiok")
+
+            send("isready")
+            recv_until("readyok")
+
+            send(move_cmd)
+            send("go byoyomi 1000")
+
+            while True:
+                line = proc.stdout.readline().strip()
+                print("[AI]", line)
+                if line.startswith("bestmove"):
+                    bestmove = line.split()[1]
+                    print(f"✅ AIの最善手: {bestmove}")
+                    break
+
+            send("quit")
+            proc.terminate()
+
+        except Exception as e:
+            print(f"❌ AI呼び出しエラー: {e}")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

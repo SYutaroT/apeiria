@@ -59,6 +59,16 @@ try:
         gui_line = syogi_proc.stdout.readline()
         if gui_line:
             print("[GUI]", gui_line.strip())
+        elif syogi_proc.poll() is not None:
+            # GUI側が終了していたら、エラーログをすべて読んで出力
+            print("[GUI] syougi.py が異常終了しました")
+            remaining_output = syogi_proc.stdout.read()
+            if remaining_output:
+                print("[GUI] 残りのログ:\n", remaining_output)
+            break
+
+        if gui_line:
+            print("[GUI]", gui_line.strip())
         if syogi_proc.poll() is not None:
             print("🛑 syougi.py が終了しました")
             break

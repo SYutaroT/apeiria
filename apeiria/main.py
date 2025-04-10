@@ -22,8 +22,8 @@ def is_admin():
 #     sys.exit(0)
 
 # 以下のコードは管理者権限で実行される
-# subprocess.Popen(
-#     r"C:\\Users\\sachy\\AppData\\Local\\Programs\\VOICEVOX\\VOICEVOX.exe")
+subprocess.Popen(
+    r"C:\Users\Takeuchi\AppData\Local\Programs\VOICEVOX\VOICEVOX.exe")
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)

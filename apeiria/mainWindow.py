@@ -6,7 +6,7 @@ import datetime
 import is_weather
 import analyzer
 import speak
-import youtube
+# import youtube
 import tkinter as tk
 import subprocess
 from subprocess import PIPE
@@ -20,8 +20,8 @@ class MainWindow(QtWidgets.QMainWindow):
         self.action = True
         self.ui = qt_ApeiriaUI.Ui_MainWindow()
         self.weather = is_weather.WeatherResponder()
-        self.youtube = youtube.Player()
-        self.download = youtube.Download()
+        # self.youtube = youtube.Player()
+        # self.download = youtube.Download()
         self.ui.setupUi(self)
         self.log = []
         self.question_we = False
@@ -121,17 +121,17 @@ class MainWindow(QtWidgets.QMainWindow):
             # self.youtube.MP4_saisei(value)
 
             fc = "5"
-        elif value == "ダウンロード":
-            if self.question_down == False:
-                self.ui.labelResponce.setText("urlを入力してください")
-                self.question_down = True
-                self.ui.lineEdit.clear()
-                fc = "5"
-        elif self.question_down == True:
-            self.download.youtube_dl(value)
-            self.question_down = False
-            self.ui.lineEdit.clear()
-            fc = "5"
+        # elif value == "ダウンロード":
+        #     if self.question_down == False:
+        #         self.ui.labelResponce.setText("urlを入力してください")
+        #         self.question_down = True
+        #         self.ui.lineEdit.clear()
+        #         fc = "5"
+        # elif self.question_down == True:
+        #     self.download.youtube_dl(value)
+        #     self.question_down = False
+        #     self.ui.lineEdit.clear()
+        #     fc = "5"
         else:
             response = self.apeiria.dialogue(value)
             talkword = response[0]

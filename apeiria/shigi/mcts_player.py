@@ -1,14 +1,21 @@
 import numpy as np
 import torch
+import sys
+sys.path.append(r"C:\Python\AI_Syogi\python-dlshogi2")
+import sys
+import shogi 
+# 仮想環境のパスを追加
+sys.path.append(r"C:\Python\apeiria\venv\Lib\site-packages")
 
 from cshogi import Board, BLACK, NOT_REPETITION, REPETITION_DRAW, REPETITION_WIN, REPETITION_SUPERIOR, move_to_usi
 from pydlshogi2.features import FEATURES_NUM, make_input_features, make_move_label
 from pydlshogi2.uct.uct_node import NodeTree
 from pydlshogi2.network.policy_value_resnet import PolicyValueNetwork
 from pydlshogi2.player.base_player import BasePlayer
-
+from cshogi import BLACK, WHITE
 import time
 import math
+import sys
 
 # デフォルトGPU ID
 DEFAULT_GPU_ID = 0
@@ -73,12 +80,13 @@ class MCTSPlayer(BasePlayer):
     # USIエンジンの名前
     name = 'python-dlshogi2'
     # デフォルトチェックポイント
-    DEFAULT_MODELFILE = 'checkpoints/checkpoint.pth'
+    DEFAULT_MODELFILE = 'checkpoint-005.pth'
 
     def __init__(self):
         super().__init__()
         # チェックポイントのパス
         self.modelfile = self.DEFAULT_MODELFILE
+        self.time_limit = None
         # モデル
         self.model = None
         # 入力特徴量
@@ -194,119 +202,139 @@ class MCTSPlayer(BasePlayer):
         for _ in range(self.batch_size):
             self.queue_node(self.root_board, current_node)
         self.eval_node()
+    def position(self, sfen_line, usi_moves=None):
+        tokens = sfen_line.strip().split()
+        if tokens[0] != "position":
+            print("[ERROR] positionコマンドの形式が不正です", flush=True)
+            return
 
-    def position(self, sfen, usi_moves):
-        if sfen == 'startpos':
-            self.root_board.reset()
-        elif sfen[:5] == 'sfen ':
-            self.root_board.set_sfen(sfen[5:])
+        if tokens[1] == "startpos":
+            sfen = "startpos"
+            moves = tokens[3:] if len(tokens) > 3 and tokens[2] == "moves" else []
+        elif tokens[1] == "sfen":
+            try:
+                # sfen 部分は "sfen" + 6パーツで固定長
+                sfen_parts = tokens[2:8]
+                if len(sfen_parts) != 6:
+                    raise ValueError(f"sfen の形式が不正です（6要素必要）: '{' '.join(sfen_parts)}'")
+                sfen = " ".join(sfen_parts)
+                moves = []
+                if "moves" in tokens:
+                    idx = tokens.index("moves")
+                    moves = tokens[idx + 1:]
+            except Exception as e:
+                print(f"[ERROR] SFEN解析エラー: {e}")
+                return
+        else:
+            print(f"[ERROR] 不明なposition引数: {tokens[1]}")
+            return
+
+        print(f"[DEBUG] 渡された position コマンド: sfen={sfen}, moves={moves}", flush=True)
+
+        # === 実際に局面をセット ===
+        self._set_position(sfen, moves)
+    def _set_position(self, sfen, usi_moves):
+        self.root_board = Board()
+
+        try:
+            self.root_board.set_sfen(sfen)
+        except Exception as e:
+            print(f"[ERROR] set_sfen 失敗: {e}")
+            return
 
         starting_pos_key = self.root_board.zobrist_hash()
 
         moves = []
         for usi_move in usi_moves:
-            move = self.root_board.push_usi(usi_move)
-            moves.append(move)
+            try:
+                move = self.root_board.push_usi(usi_move)
+                moves.append(move)
+            except Exception as e:
+                print(f"[ERROR] push_usi 失敗: {usi_move}: {e}")
+                return
+
         self.tree.reset_to_position(starting_pos_key, moves)
 
         if self.debug:
             print(self.root_board)
 
+
     def set_limits(self, btime=None, wtime=None, byoyomi=None, binc=None, winc=None, nodes=None, infinite=False, ponder=False):
-        # 探索回数の閾値を設定
-        if infinite or ponder:
-            # infiniteもしくはponderの場合は、探索を打ち切らないため、32ビット整数の最大値を設定する
-            self.halt = 2**31-1
-        elif nodes:
-            # プレイアウト数固定
-            self.halt = nodes
-        else:
-            self.remaining_time, inc = (btime, binc) if self.root_board.turn == BLACK else (wtime, winc)
-            if self.remaining_time is None and byoyomi is None and inc is None:
-                # 時間指定がない場合
-                self.halt = DEFAULT_CONST_PLAYOUT
+            if infinite or ponder:
+                self.time_limit = float('inf')
+            elif nodes:
+                self.time_limit = nodes
+            elif byoyomi:
+                print(f"[LIMIT] time_limit set to {self.time_limit} ms")
+                self.time_limit = int(byoyomi)
             else:
-                self.minimum_time = 0
-                self.remaining_time = int(self.remaining_time) if self.remaining_time else 0
-                inc = int(inc) if inc else 0
-                self.time_limit = self.remaining_time / (14 + max(0, 30 - self.root_board.move_number)) + inc
-                # 秒読みの場合
-                if byoyomi:
-                    byoyomi = int(byoyomi) - self.byoyomi_margin
-                    self.minimum_time = byoyomi
-                    # time_limitが秒読み以下の場合、秒読みに設定
-                    if self.time_limit < byoyomi:
-                        self.time_limit = byoyomi
-                self.extend_time = self.time_limit > self.minimum_time
-                self.halt = None
+                self.remaining_time = int(btime) if self.root_board.turn == BLACK else int(wtime)
+                self.time_limit = self.remaining_time / (14 + max(0, 30 - self.root_board.move_number)) + int(binc or winc)
+            # ← 修正ポイント！
+            self.minimum_time = min(500, self.time_limit // 2)
+            self.extend_time = True
 
     def go(self):
+        print(f"[go] is_game_over: {self.root_board.is_game_over()}", flush=True)
+        print(f"[go] is_nyugyoku: {self.root_board.is_nyugyoku()}", flush=True)
+
         # 探索開始時刻の記録
         self.begin_time = time.time()
+        self.set_limits(byoyomi=5000)
+
 
         # 投了チェック
         if self.root_board.is_game_over():
             return 'resign', None
 
-        # 入玉宣言勝ちチェック
         if self.root_board.is_nyugyoku():
             return 'win', None
 
         current_node = self.tree.current_head
 
-        # 詰みの場合
         if current_node.value == VALUE_WIN:
             matemove = self.root_board.mate_move(3)
             if matemove != 0:
-                print('info score mate 3 pv {}'.format(move_to_usi(matemove)), flush=True)
-                return move_to_usi(matemove), None
+                bestmove_usi = move_to_usi(matemove)
+                print('info score mate 3 pv {}'.format(bestmove_usi), flush=True)
+                return bestmove_usi, None
+
         if not self.root_board.is_check():
             matemove = self.root_board.mate_move_in_1ply()
             if matemove:
-                print('info score mate 1 pv {}'.format(move_to_usi(matemove)), flush=True)
-                return move_to_usi(matemove), None
+                bestmove_usi = move_to_usi(matemove)
+                print('info score mate 1 pv {}'.format(bestmove_usi), flush=True)
+                return bestmove_usi, None
 
-        # プレイアウト数をクリア
         self.playout_count = 0
 
-        # ルートノードが未展開の場合、展開する
         if current_node.child_move is None:
             current_node.expand_node(self.root_board)
 
-        # 候補手が1つの場合は、その手を返す
         if self.halt is None and len(current_node.child_move) == 1:
             if current_node.child_move_count[0] > 0:
                 bestmove, bestvalue, ponder_move = self.get_bestmove_and_print_pv()
-                return move_to_usi(bestmove), move_to_usi(ponder_move) if ponder_move else None
+                bestmove_usi = move_to_usi(bestmove)
+                return bestmove_usi, move_to_usi(ponder_move) if ponder_move else None
             else:
-                return move_to_usi(current_node.child_move[0]), None
+                bestmove_usi = move_to_usi(current_node.child_move[0])
+                return bestmove_usi, None
 
-        # ルートノードが未評価の場合、評価する
         if current_node.policy is None:
             self.current_batch_index = 0
             self.queue_node(self.root_board, current_node)
             self.eval_node()
 
-        # 探索
         self.search()
 
-        # 最善手の取得とPVの表示
         bestmove, bestvalue, ponder_move = self.get_bestmove_and_print_pv()
 
-        # for debug
-        if self.debug:
-            for i in range(len(current_node.child_move)):
-                print('{:3}:{:5} move_count:{:4} nn_rate:{:.5f} win_rate:{:.5f}'.format(
-                    i, move_to_usi(current_node.child_move[i]),
-                    current_node.child_move_count[i],
-                    current_node.policy[i],
-                    current_node.child_sum_value[i] / current_node.child_move_count[i] if current_node.child_move_count[i] > 0 else 0))
-
-        # 閾値未満の場合投了
-        if bestvalue < self.resign_threshold:
+        if bestmove is None:
+            print("❗ bestmove が Noneです！", flush=True)
             return 'resign', None
 
-        return move_to_usi(bestmove), move_to_usi(ponder_move) if ponder_move else None
+        bestmove_usi = move_to_usi(bestmove)
+        return bestmove_usi, move_to_usi(ponder_move) if ponder_move else None
 
     def stop(self):
         # すぐに中断する
@@ -335,6 +363,8 @@ class MCTSPlayer(BasePlayer):
 
         # 探索回数が閾値を超える、または探索が打ち切られたらループを抜ける
         while True:
+            if self.check_interruption():
+                break
             trajectories_batch.clear()
             trajectories_batch_discarded.clear()
             self.current_batch_index = 0
@@ -532,48 +562,44 @@ class MCTSPlayer(BasePlayer):
 
         return bestmove, bestvalue, ponder_move
 
-    # 探索を打ち切るか確認
+        # 探索を打ち切るか確認
     def check_interruption(self):
-        # プレイアウト数数が閾値を超えている
+        if self.time_limit is None or self.minimum_time is None:
+            return False
         if self.halt is not None:
             return self.playout_count >= self.halt
 
-        # 候補手が1つの場合、中断する
         current_node = self.tree.current_head
         if len(current_node.child_move) == 1:
             return True
 
-        # 消費時間
         spend_time = int((time.time() - self.begin_time) * 1000)
 
-        # 消費時間が短すぎる場合、もしくは秒読みの場合は打ち切らない
-        if spend_time * 10 < self.time_limit or spend_time < self.minimum_time:
+        # 💥 時間オーバーなら即中断！
+        if spend_time >= self.time_limit:
+            print(f"info string time limit reached: {spend_time}ms ≥ {self.time_limit}ms", flush=True)
+            return True
+
+        if spend_time < self.minimum_time:
             return False
 
-        # 探索回数が最も多い手と次に多い手を求める
+        # ✨ ここに child_move_count を明示的に定義（current_nodeから取得）
         child_move_count = current_node.child_move_count
+
         second_index, first_index = np.argpartition(child_move_count, -2)[-2:]
         second, first = child_move_count[[second_index, first_index]]
 
-        # 探索速度から残りの時間で探索できるプレイアウト数を見積もる
         rest = int(self.playout_count * ((self.time_limit - spend_time) / spend_time))
-
-        # 残りの探索で次善手が最善手を超える可能性がある場合は打ち切らない
         if first - second <= rest:
             return False
 
-        # 探索延長
-        #   21手目以降かつ、残り時間がある場合、
-        #   最善手の探索回数が次善手の探索回数の1.5倍未満
-        #   もしくは、勝率が逆なら探索延長する
-        if self.extend_time and \
-           self.root_board.move_number > 20 and \
-           self.remaining_time > self.time_limit * 2 and \
-           (first < second * 1.5 or
-            current_node.child_sum_value[first_index] / child_move_count[first_index] < current_node.child_sum_value[second_index] / child_move_count[second_index]):
-            # 探索時間を2倍に延長
+        if hasattr(self, 'extend_time') and self.extend_time and \
+            self.root_board.move_number > 20 and \
+            getattr(self, 'remaining_time', 0) > self.time_limit * 2 and \
+            (first < second * 1.5 or
+            current_node.child_sum_value[first_index] / child_move_count[first_index] <
+            current_node.child_sum_value[second_index] / child_move_count[second_index]):
             self.time_limit *= 2
-            # 探索延長は1回のみ
             self.extend_time = False
             print('info string extend_time')
             return False
@@ -626,6 +652,51 @@ class MCTSPlayer(BasePlayer):
             # ノードの値を更新
             current_node.policy = probabilities
             current_node.value = float(value)
+    def load_model(self):
+        print(f"[AI] モデル読み込み開始: {self.modelfile}", flush=True)
+        self.model = PolicyValueNetwork()
+        self.model.to(self.device)
+        checkpoint = torch.load(self.modelfile, map_location=self.device)
+        self.model.load_state_dict(checkpoint['model'])
+        self.model.eval()
+        print(f"[AI] モデル読み込み成功", flush=True)
+
+    def run(self):
+        print("[RUN] MCTSPlayer 起動", flush=True)
+        while True:
+            try:
+                print("[RUN] input待ち", flush=True)
+                line = sys.stdin.readline()
+                
+            except Exception as e:
+                print(f"[RUN] 入力エラー: {e}", flush=True)
+                break
+            if not line:
+                print("[RUN] 空行スキップ", flush=True)
+                continue
+            print(f"[RUN] 受信: {repr(line)}", flush=True)
+
+            line = line.strip()
+            if line.startswith("usi"):
+                self.usi()
+                print("usiok", flush=True)
+            elif line.startswith("isready"):
+                self.isready()
+                print("readyok", flush=True)
+            elif line.startswith("setoption"):
+                self.setoption(line.split())
+            elif line.startswith("position"):
+                print(f"[DEBUG] 渡された position コマンド: {line}", flush=True)
+
+                tokens = line.split()
+                self.position(line)
+            elif line.startswith("go"):
+                bestmove, ponder = self.go()
+                if bestmove:
+                    print(f"bestmove {bestmove}" + (f" ponder {ponder}" if ponder else ""), flush=True)
+            elif line.startswith("quit"):
+                self.quit()
+                break
 
 if __name__ == '__main__':
     player = MCTSPlayer()
