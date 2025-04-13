@@ -2,6 +2,7 @@ import subprocess
 import time
 import os
 
+
 # 相対パスに対応
 current_dir = os.path.dirname(os.path.abspath(__file__))
 

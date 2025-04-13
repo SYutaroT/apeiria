@@ -1,4 +1,4 @@
-[AIの認識] 2025-04-11 19:55:40
+[AIの認識] 2025-04-13 17:52:26
 '  9  8  7  6  5  4  3  2  1
 P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
 P2 * -HI *  *  *  *  * -KA * 
@@ -12,12 +12,12 @@ P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
 -
 
 ==================================================
-[AIの認識] 2025-04-11 19:55:45
+[AIの認識] 2025-04-13 17:52:30
 '  9  8  7  6  5  4  3  2  1
 P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
 P2 * -HI *  *  *  *  * -KA * 
-P3-FU * -FU-FU-FU-FU-FU-FU-FU
-P4 * -FU *  *  *  *  *  *  * 
+P3-FU-FU-FU-FU-FU-FU * -FU-FU
+P4 *  *  *  *  *  * -FU *  * 
 P5 *  *  *  *  *  *  *  *  * 
 P6 *  *  *  *  *  *  * +FU * 
 P7+FU+FU+FU+FU+FU+FU+FU * +FU
@@ -26,12 +26,12 @@ P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
 +
 
 ==================================================
-[AIの認識] 2025-04-11 19:55:49
+[AIの認識] 2025-04-13 17:52:33
 '  9  8  7  6  5  4  3  2  1
 P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
 P2 * -HI *  *  *  *  * -KA * 
-P3-FU * -FU-FU-FU-FU-FU-FU-FU
-P4 * -FU *  *  *  *  *  *  * 
+P3-FU-FU-FU-FU-FU-FU * -FU-FU
+P4 *  *  *  *  *  * -FU *  * 
 P5 *  *  *  *  *  *  *  *  * 
 P6 *  * +FU *  *  *  * +FU * 
 P7+FU+FU * +FU+FU+FU+FU * +FU
@@ -40,13 +40,13 @@ P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
 -
 
 ==================================================
-[AIの認識] 2025-04-11 19:55:52
+[AIの認識] 2025-04-13 17:52:37
 '  9  8  7  6  5  4  3  2  1
 P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
 P2 * -HI *  *  *  *  * -KA * 
-P3-FU * -FU-FU-FU-FU-FU-FU-FU
-P4 *  *  *  *  *  *  *  *  * 
-P5 * -FU *  *  *  *  *  *  * 
+P3-FU-FU-FU-FU-FU *  * -FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  *  *  * 
 P6 *  * +FU *  *  *  * +FU * 
 P7+FU+FU * +FU+FU+FU+FU * +FU
 P8 * +KA *  *  *  *  * +HI * 
@@ -54,701 +54,1778 @@ P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
 +
 
 ==================================================
-[AIの認識] 2025-04-11 19:55:56
+[AIの認識] 2025-04-13 17:52:42
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU *  * -FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  *  *  *  * 
+P7+FU+FU * +FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 17:52:45
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  *  *  * 
+P3-FU-FU-FU-FU-FU * -KA-FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  *  *  *  * 
+P7+FU+FU * +FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 17:52:50
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  *  *  * 
+P3-FU-FU-FU-FU-FU * -KA-FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  * +FU *  * 
+P7+FU+FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 17:52:54
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 *  *  *  *  *  * -HI *  * 
+P3-FU-FU-FU-FU-FU * -KA-FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  * +FU *  * 
+P7+FU+FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 17:52:59
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 *  *  *  *  *  * -HI *  * 
+P3-FU-FU-FU-FU-FU * -KA-FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  * +FU *  * 
+P7+FU+FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  * +GI+HI * 
+P9+KY+KE+GI+KI+OU+KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 17:53:03
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 *  *  *  *  *  * -HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  * +FU *  * 
+P7+FU+FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  * +GI+HI * 
+P9+KY+KE+GI+KI+OU+KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 17:53:06
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 *  *  *  *  *  * -HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  * +GI+HI * 
+P9+KY+KE+GI+KI+OU+KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 17:53:10
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI-GI-KE-KY
+P2 *  *  * -OU *  * -HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  * +GI+HI * 
+P9+KY+KE+GI+KI+OU+KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 17:53:14
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI-GI-KE-KY
+P2 *  *  * -OU *  * -HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU *  * +FU
+P8 * +KA * +OU *  * +GI+HI * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 17:53:19
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  *  * -OU * -GI-HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU *  * +FU
+P8 * +KA * +OU *  * +GI+HI * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 17:53:23
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  *  * -OU * -GI-HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA * +OU *  *  * +HI * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 17:53:27
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  * -GI-HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA * +OU *  *  * +HI * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 17:53:33
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  * -GI-HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA * +OU *  * +HI *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 17:53:36
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  *  * -HI *  * 
+P3 * -FU-FU-FU-FU-GI-KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA * +OU *  * +HI *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 17:53:40
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  *  * -HI *  * 
+P3 * -FU-FU-FU-FU-GI-KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA+OU *  *  * +HI *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 17:53:44
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  * -KA-HI *  * 
+P3 * -FU-FU-FU-FU-GI * -FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA+OU *  *  * +HI *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 17:53:47
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  * -KA-HI *  * 
+P3 * -FU-FU-FU-FU-GI * -FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  * +GI+FU *  * 
+P7 * +FU * +FU+FU+FU *  * +FU
+P8 * +KA+OU *  *  * +HI *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 17:53:51
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  * -KA-HI *  * 
+P3 * -FU-FU-FU * -GI * -FU-FU
+P4-FU *  *  * -FU-FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  * +GI+FU *  * 
+P7 * +FU * +FU+FU+FU+HI * +FU
+P8 * +KA+OU *  *  *  *  *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:02:46
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU-FU-FU-FU-FU
+P4 *  *  *  *  *  *  *  *  * 
+P5 *  *  *  *  *  *  *  *  * 
+P6 *  *  *  *  *  *  * +FU * 
+P7+FU+FU+FU+FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:05:27
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU-FU-FU-FU-FU
+P4 *  *  *  *  *  *  *  *  * 
+P5 *  *  *  *  *  *  *  *  * 
+P6 *  *  *  *  *  *  * +FU * 
+P7+FU+FU+FU+FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:05:31
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU-FU * -FU-FU
+P4 *  *  *  *  *  * -FU *  * 
+P5 *  *  *  *  *  *  *  *  * 
+P6 *  *  *  *  *  *  * +FU * 
+P7+FU+FU+FU+FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:05:34
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU-FU * -FU-FU
+P4 *  *  *  *  *  * -FU *  * 
+P5 *  *  *  *  *  *  *  *  * 
+P6 *  * +FU *  *  *  * +FU * 
+P7+FU+FU * +FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:05:38
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU *  * -FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  *  *  * 
+P6 *  * +FU *  *  *  * +FU * 
+P7+FU+FU * +FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:05:43
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU *  * -FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  *  *  *  * 
+P7+FU+FU * +FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:05:46
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  *  *  * 
+P3-FU-FU-FU-FU-FU * -KA-FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  *  *  *  * 
+P7+FU+FU * +FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:05:51
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  *  *  * 
+P3-FU-FU-FU-FU-FU * -KA-FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  * +FU *  * 
+P7+FU+FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:05:55
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 *  *  *  *  *  * -HI *  * 
+P3-FU-FU-FU-FU-FU * -KA-FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  * +FU *  * 
+P7+FU+FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:05:59
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 *  *  *  *  *  * -HI *  * 
+P3-FU-FU-FU-FU-FU * -KA-FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  * +FU *  * 
+P7+FU+FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  * +GI+HI * 
+P9+KY+KE+GI+KI+OU+KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:06:03
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 *  *  *  *  *  * -HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  * +FU *  * 
+P7+FU+FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  * +GI+HI * 
+P9+KY+KE+GI+KI+OU+KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:06:07
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 *  *  *  *  *  * -HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  * +GI+HI * 
+P9+KY+KE+GI+KI+OU+KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:06:11
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI-GI-KE-KY
+P2 *  *  * -OU *  * -HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  * +GI+HI * 
+P9+KY+KE+GI+KI+OU+KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:06:15
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI-GI-KE-KY
+P2 *  *  * -OU *  * -HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU *  * +FU
+P8 * +KA * +OU *  * +GI+HI * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:06:20
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  *  * -OU * -GI-HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU *  * +FU
+P8 * +KA * +OU *  * +GI+HI * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:06:24
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  *  * -OU * -GI-HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA * +OU *  *  * +HI * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:06:28
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  * -GI-HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA * +OU *  *  * +HI * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:06:33
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  * -GI-HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA * +OU *  * +HI *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:06:37
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  *  * -HI *  * 
+P3 * -FU-FU-FU-FU-GI-KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA * +OU *  * +HI *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:06:41
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  *  * -HI *  * 
+P3 * -FU-FU-FU-FU-GI-KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA+OU *  *  * +HI *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:06:45
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  * -KA-HI *  * 
+P3 * -FU-FU-FU-FU-GI * -FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA+OU *  *  * +HI *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:06:48
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  * -KA-HI *  * 
+P3 * -FU-FU-FU-FU-GI * -FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  * +GI+FU *  * 
+P7 * +FU * +FU+FU+FU *  * +FU
+P8 * +KA+OU *  *  * +HI *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:06:52
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  * -KA-HI *  * 
+P3 * -FU-FU-FU * -GI * -FU-FU
+P4-FU *  *  * -FU-FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  * +GI+FU *  * 
+P7 * +FU * +FU+FU+FU+HI * +FU
+P8 * +KA+OU *  *  *  *  *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:14:32
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU-FU-FU-FU-FU
+P4 *  *  *  *  *  *  *  *  * 
+P5 *  *  *  *  *  *  *  *  * 
+P6 *  *  *  *  *  *  * +FU * 
+P7+FU+FU+FU+FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:14:36
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU-FU * -FU-FU
+P4 *  *  *  *  *  * -FU *  * 
+P5 *  *  *  *  *  *  *  *  * 
+P6 *  *  *  *  *  *  * +FU * 
+P7+FU+FU+FU+FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:14:39
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU-FU * -FU-FU
+P4 *  *  *  *  *  * -FU *  * 
+P5 *  *  *  *  *  *  *  *  * 
+P6 *  * +FU *  *  *  * +FU * 
+P7+FU+FU * +FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:14:43
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU *  * -FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  *  *  * 
+P6 *  * +FU *  *  *  * +FU * 
+P7+FU+FU * +FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:14:48
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU *  * -FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  *  *  *  * 
+P7+FU+FU * +FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:14:51
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  *  *  * 
+P3-FU-FU-FU-FU-FU * -KA-FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  *  *  *  * 
+P7+FU+FU * +FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:14:56
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  *  *  * 
+P3-FU-FU-FU-FU-FU * -KA-FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  * +FU *  * 
+P7+FU+FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:15:00
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 *  *  *  *  *  * -HI *  * 
+P3-FU-FU-FU-FU-FU * -KA-FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  * +FU *  * 
+P7+FU+FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:15:05
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 *  *  *  *  *  * -HI *  * 
+P3-FU-FU-FU-FU-FU * -KA-FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  * +FU *  * 
+P7+FU+FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  * +GI+HI * 
+P9+KY+KE+GI+KI+OU+KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:15:09
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 *  *  *  *  *  * -HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  * +FU *  * 
+P7+FU+FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  * +GI+HI * 
+P9+KY+KE+GI+KI+OU+KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:15:12
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 *  *  *  *  *  * -HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  * +GI+HI * 
+P9+KY+KE+GI+KI+OU+KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:15:16
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI-GI-KE-KY
+P2 *  *  * -OU *  * -HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  * +GI+HI * 
+P9+KY+KE+GI+KI+OU+KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:15:20
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI-GI-KE-KY
+P2 *  *  * -OU *  * -HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU *  * +FU
+P8 * +KA * +OU *  * +GI+HI * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:15:25
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  *  * -OU * -GI-HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU *  * +FU
+P8 * +KA * +OU *  * +GI+HI * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:15:29
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  *  * -OU * -GI-HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA * +OU *  *  * +HI * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:15:34
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  * -GI-HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA * +OU *  *  * +HI * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:15:39
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  * -GI-HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA * +OU *  * +HI *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:15:43
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  *  * -HI *  * 
+P3 * -FU-FU-FU-FU-GI-KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA * +OU *  * +HI *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:15:46
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  *  * -HI *  * 
+P3 * -FU-FU-FU-FU-GI-KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA+OU *  *  * +HI *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:15:50
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  * -KA-HI *  * 
+P3 * -FU-FU-FU-FU-GI * -FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA+OU *  *  * +HI *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:15:53
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  * -KA-HI *  * 
+P3 * -FU-FU-FU-FU-GI * -FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  * +GI+FU *  * 
+P7 * +FU * +FU+FU+FU *  * +FU
+P8 * +KA+OU *  *  * +HI *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:15:57
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  * -KA-HI *  * 
+P3 * -FU-FU-FU * -GI * -FU-FU
+P4-FU *  *  * -FU-FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  * +GI+FU *  * 
+P7 * +FU * +FU+FU+FU+HI * +FU
+P8 * +KA+OU *  *  *  *  *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:20:29
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU-FU-FU-FU-FU
+P4 *  *  *  *  *  *  *  *  * 
+P5 *  *  *  *  *  *  *  *  * 
+P6 *  *  *  *  *  *  * +FU * 
+P7+FU+FU+FU+FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:20:33
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU-FU * -FU-FU
+P4 *  *  *  *  *  * -FU *  * 
+P5 *  *  *  *  *  *  *  *  * 
+P6 *  *  *  *  *  *  * +FU * 
+P7+FU+FU+FU+FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:20:36
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU-FU * -FU-FU
+P4 *  *  *  *  *  * -FU *  * 
+P5 *  *  *  *  *  *  *  *  * 
+P6 *  * +FU *  *  *  * +FU * 
+P7+FU+FU * +FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:20:40
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU *  * -FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  *  *  * 
+P6 *  * +FU *  *  *  * +FU * 
+P7+FU+FU * +FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:20:45
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU *  * -FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  *  *  *  * 
+P7+FU+FU * +FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:20:48
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  *  *  * 
+P3-FU-FU-FU-FU-FU * -KA-FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  *  *  *  * 
+P7+FU+FU * +FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:20:53
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  *  *  * 
+P3-FU-FU-FU-FU-FU * -KA-FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  * +FU *  * 
+P7+FU+FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:20:57
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 *  *  *  *  *  * -HI *  * 
+P3-FU-FU-FU-FU-FU * -KA-FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  * +FU *  * 
+P7+FU+FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:21:02
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 *  *  *  *  *  * -HI *  * 
+P3-FU-FU-FU-FU-FU * -KA-FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  * +FU *  * 
+P7+FU+FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  * +GI+HI * 
+P9+KY+KE+GI+KI+OU+KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:21:05
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 *  *  *  *  *  * -HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  * +FU *  * 
+P7+FU+FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  * +GI+HI * 
+P9+KY+KE+GI+KI+OU+KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:21:09
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 *  *  *  *  *  * -HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  * +GI+HI * 
+P9+KY+KE+GI+KI+OU+KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:21:13
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI-GI-KE-KY
+P2 *  *  * -OU *  * -HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  * +GI+HI * 
+P9+KY+KE+GI+KI+OU+KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:21:17
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI-GI-KE-KY
+P2 *  *  * -OU *  * -HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU *  * +FU
+P8 * +KA * +OU *  * +GI+HI * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:21:22
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  *  * -OU * -GI-HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU *  * +FU
+P8 * +KA * +OU *  * +GI+HI * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:21:26
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  *  * -OU * -GI-HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA * +OU *  *  * +HI * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:21:30
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  * -GI-HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA * +OU *  *  * +HI * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:21:36
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  * -GI-HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA * +OU *  * +HI *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:21:39
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  *  * -HI *  * 
+P3 * -FU-FU-FU-FU-GI-KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA * +OU *  * +HI *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:21:43
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  *  * -HI *  * 
+P3 * -FU-FU-FU-FU-GI-KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA+OU *  *  * +HI *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:21:47
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  * -KA-HI *  * 
+P3 * -FU-FU-FU-FU-GI * -FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA+OU *  *  * +HI *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:21:50
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  * -KA-HI *  * 
+P3 * -FU-FU-FU-FU-GI * -FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  * +GI+FU *  * 
+P7 * +FU * +FU+FU+FU *  * +FU
+P8 * +KA+OU *  *  * +HI *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:21:54
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  * -KA-HI *  * 
+P3 * -FU-FU-FU * -GI * -FU-FU
+P4-FU *  *  * -FU-FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  * +GI+FU *  * 
+P7 * +FU * +FU+FU+FU+HI * +FU
+P8 * +KA+OU *  *  *  *  *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:26:27
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU-FU-FU-FU-FU
+P4 *  *  *  *  *  *  *  *  * 
+P5 *  *  *  *  *  *  *  *  * 
+P6 *  *  *  *  *  *  * +FU * 
+P7+FU+FU+FU+FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:26:31
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU-FU * -FU-FU
+P4 *  *  *  *  *  * -FU *  * 
+P5 *  *  *  *  *  *  *  *  * 
+P6 *  *  *  *  *  *  * +FU * 
+P7+FU+FU+FU+FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:26:34
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU-FU * -FU-FU
+P4 *  *  *  *  *  * -FU *  * 
+P5 *  *  *  *  *  *  *  *  * 
+P6 *  * +FU *  *  *  * +FU * 
+P7+FU+FU * +FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:26:38
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU *  * -FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  *  *  * 
+P6 *  * +FU *  *  *  * +FU * 
+P7+FU+FU * +FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:26:43
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU *  * -FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  *  *  *  * 
+P7+FU+FU * +FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:26:46
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  *  *  * 
+P3-FU-FU-FU-FU-FU * -KA-FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  *  *  *  * 
+P7+FU+FU * +FU+FU+FU+FU * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:26:51
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  *  *  * 
+P3-FU-FU-FU-FU-FU * -KA-FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  * +FU *  * 
+P7+FU+FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:26:55
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 *  *  *  *  *  * -HI *  * 
+P3-FU-FU-FU-FU-FU * -KA-FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  * +FU *  * 
+P7+FU+FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:27:00
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 *  *  *  *  *  * -HI *  * 
+P3-FU-FU-FU-FU-FU * -KA-FU-FU
+P4 *  *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  * +FU *  * 
+P7+FU+FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  * +GI+HI * 
+P9+KY+KE+GI+KI+OU+KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:27:04
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 *  *  *  *  *  * -HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6 *  * +FU *  *  * +FU *  * 
+P7+FU+FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  * +GI+HI * 
+P9+KY+KE+GI+KI+OU+KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:27:07
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 *  *  *  *  *  * -HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  * +GI+HI * 
+P9+KY+KE+GI+KI+OU+KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:27:11
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI-GI-KE-KY
+P2 *  *  * -OU *  * -HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU *  * +FU
+P8 * +KA *  *  *  * +GI+HI * 
+P9+KY+KE+GI+KI+OU+KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:27:15
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI-GI-KE-KY
+P2 *  *  * -OU *  * -HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU *  * +FU
+P8 * +KA * +OU *  * +GI+HI * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:27:20
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  *  * -OU * -GI-HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU *  * +FU
+P8 * +KA * +OU *  * +GI+HI * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:27:24
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  *  * -OU * -GI-HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA * +OU *  *  * +HI * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:27:28
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  * -GI-HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA * +OU *  *  * +HI * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:27:34
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  * -GI-HI *  * 
+P3 * -FU-FU-FU-FU * -KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA * +OU *  * +HI *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:27:37
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  *  * -HI *  * 
+P3 * -FU-FU-FU-FU-GI-KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA * +OU *  * +HI *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:27:41
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  *  * -HI *  * 
+P3 * -FU-FU-FU-FU-GI-KA-FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA+OU *  *  * +HI *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:27:45
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  * -KA-HI *  * 
+P3 * -FU-FU-FU-FU-GI * -FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  *  * +FU *  * 
+P7 * +FU * +FU+FU+FU+GI * +FU
+P8 * +KA+OU *  *  * +HI *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
++
+
+==================================================
+[AIの認識] 2025-04-13 18:27:48
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  * -KA-HI *  * 
+P3 * -FU-FU-FU-FU-GI * -FU-FU
+P4-FU *  *  *  * -FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  * +GI+FU *  * 
+P7 * +FU * +FU+FU+FU *  * +FU
+P8 * +KA+OU *  *  * +HI *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:27:52
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI * -KI * -KE-KY
+P2 *  * -OU *  * -KA-HI *  * 
+P3 * -FU-FU-FU * -GI * -FU-FU
+P4-FU *  *  * -FU-FU-FU *  * 
+P5 *  *  *  *  *  *  * +FU * 
+P6+FU * +FU *  * +GI+FU *  * 
+P7 * +FU * +FU+FU+FU+HI * +FU
+P8 * +KA+OU *  *  *  *  *  * 
+P9+KY+KE+GI+KI * +KI * +KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:30:08
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU-FU-FU-FU-FU
+P4 *  *  *  *  *  *  *  *  * 
+P5 *  *  *  *  *  *  *  *  * 
+P6 *  * +FU *  *  *  *  *  * 
+P7+FU+FU * +FU+FU+FU+FU+FU+FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:30:17
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU * -FU-FU-FU-FU-FU-FU-FU
+P4 * -FU *  *  *  *  *  *  * 
+P5 *  *  *  *  *  *  *  *  * 
+P6 *  * +FU *  *  *  *  *  * 
+P7+FU+FU * +FU+FU+FU+FU+FU+FU
+P8 * +KA+HI *  *  *  *  *  * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:30:22
 '  9  8  7  6  5  4  3  2  1
 P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
 P2 * -HI *  *  *  *  * -KA * 
 P3-FU * -FU-FU-FU-FU-FU-FU-FU
 P4 *  *  *  *  *  *  *  *  * 
-P5 * -FU *  *  *  *  *  *  * 
-P6 *  * +FU *  *  *  * +FU * 
-P7+FU+FU+KA+FU+FU+FU+FU * +FU
-P8 *  *  *  *  *  *  * +HI * 
+P5 * -FU+FU *  *  *  *  *  * 
+P6 *  *  *  *  *  *  *  *  * 
+P7+FU+FU * +FU+FU+FU+FU+FU+FU
+P8 * +KA+HI *  *  *  *  *  * 
 P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
 -
 
 ==================================================
-[AIの認識] 2025-04-11 19:55:59
+[AIの認識] 2025-04-13 18:30:32
 '  9  8  7  6  5  4  3  2  1
 P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
 P2 * -HI *  *  *  *  * -KA * 
+P3-FU * -FU-FU-FU-FU-FU-FU-FU
+P4 *  * +FU *  *  *  *  *  * 
+P5 *  *  *  *  *  *  *  *  * 
+P6 * -FU *  *  *  *  *  *  * 
+P7+FU+FU * +FU+FU+FU+FU+FU+FU
+P8 * +KA+HI *  *  *  *  *  * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:30:40
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU * -FU-FU-FU-FU-FU-FU-FU
+P4 *  * +FU *  *  *  *  *  * 
+P5 *  * +HI *  *  *  *  *  * 
+P6 *  *  *  *  *  *  *  *  * 
+P7+FU-TO * +FU+FU+FU+FU+FU+FU
+P8 * +KA *  *  *  *  *  *  * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+P-00FU
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:30:50
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU * +TO-FU-FU-FU-FU-FU-FU
+P4 *  *  *  *  *  *  *  *  * 
+P5 *  * +HI *  *  *  *  *  * 
+P6 *  *  *  *  *  *  *  *  * 
+P7+FU *  * +FU+FU+FU+FU+FU+FU
+P8 * -TO *  *  *  *  *  *  * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+P+00FU
+P-00FU
+P-00KA
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:31:03
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 *  * +TO *  *  *  * -KA * 
+P3-FU *  * -FU-FU-FU-FU-FU-FU
+P4 *  *  *  *  *  *  *  *  * 
+P5 *  * +HI *  *  *  *  *  * 
+P6 *  *  *  *  *  *  *  *  * 
+P7+FU-RY * +FU+FU+FU+FU+FU+FU
+P8 * -TO *  *  *  *  *  *  * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+P+00FU
+P-00FU
+P-00KA
++
+
+==================================================
+[AIの認識] 2025-04-13 18:37:08
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU-FU-FU-FU-FU
+P4 *  *  *  *  *  *  *  *  * 
+P5 *  *  *  *  *  *  *  *  * 
+P6 * +FU *  *  *  *  *  *  * 
+P7+FU * +FU+FU+FU+FU+FU+FU+FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:40:57
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU-FU-FU-FU-FU
+P4 *  *  *  *  *  *  *  *  * 
+P5 *  *  *  *  *  *  *  *  * 
+P6 * +FU *  *  *  *  *  *  * 
+P7+FU * +FU+FU+FU+FU+FU+FU+FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:41:05
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU-FU * -FU-FU
+P4 *  *  *  *  *  * -FU *  * 
+P5 * +FU *  *  *  *  *  *  * 
+P6 *  *  *  *  *  *  *  *  * 
+P7+FU * +FU+FU+FU+FU+FU+FU+FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:41:11
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU * -GI-KE-KY
+P2 * -HI *  *  *  * -KI-KA * 
+P3-FU-FU-FU-FU-FU-FU * -FU-FU
+P4 * +FU *  *  *  * -FU *  * 
+P5 *  *  *  *  *  *  *  *  * 
+P6 *  *  *  *  *  *  *  *  * 
+P7+FU * +FU+FU+FU+FU+FU+FU+FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:41:18
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU * -GI-KE-KY
+P2 * -HI *  *  *  * -KI-KA * 
+P3-FU * -FU-FU-FU-FU * -FU-FU
+P4 * -FU *  *  *  * -FU *  * 
+P5 *  *  *  *  *  *  *  *  * 
+P6 *  * +FU *  *  *  *  *  * 
+P7+FU *  * +FU+FU+FU+FU+FU+FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
+P-00FU
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:41:24
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU * -GI-KE-KY
+P2 * -HI *  *  *  * -KI+UM * 
 P3-FU * -FU-FU-FU-FU * -FU-FU
 P4 *  *  *  *  *  * -FU *  * 
 P5 * -FU *  *  *  *  *  *  * 
-P6 *  * +FU *  *  *  * +FU * 
-P7+FU+FU+KA+FU+FU+FU+FU * +FU
+P6 *  * +FU *  *  *  *  *  * 
+P7+FU *  * +FU+FU+FU+FU+FU+FU
 P8 *  *  *  *  *  *  * +HI * 
 P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
-+
+P+00KA
+P-00FU
+-
 
 ==================================================
-[AIの認識] 2025-04-11 19:56:04
+[AIの認識] 2025-04-13 18:41:29
 '  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
-P2 * -HI *  *  *  *  * -KA * 
+P1-KY-KE-GI-KI-OU *  * -KE-KY
+P2 * -HI *  *  *  * -KI-GI * 
 P3-FU * -FU-FU-FU-FU * -FU-FU
 P4 *  *  *  *  *  * -FU *  * 
 P5 * -FU *  *  *  *  *  *  * 
-P6 *  * +FU *  *  *  * +FU * 
-P7+FU+FU+KA+FU+FU+FU+FU * +FU
-P8 *  * +GI *  *  *  * +HI * 
-P9+KY+KE * +KI+OU+KI+GI+KE+KY
--
-
-==================================================
-[AIの認識] 2025-04-11 19:56:07
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
-P2 * -HI *  *  *  *  *  *  * 
-P3-FU * -FU-FU-FU-FU * -FU-FU
-P4 *  *  *  *  *  * -FU *  * 
-P5 * -FU *  *  *  *  *  *  * 
-P6 *  * +FU *  *  *  * +FU * 
-P7+FU+FU-UM+FU+FU+FU+FU * +FU
-P8 *  * +GI *  *  *  * +HI * 
-P9+KY+KE * +KI+OU+KI+GI+KE+KY
-P-00KA
-+
-
-==================================================
-[AIの認識] 2025-04-11 19:56:10
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
-P2 * -HI *  *  *  *  *  *  * 
-P3-FU * -FU-FU-FU-FU * -FU-FU
-P4 *  *  *  *  *  * -FU *  * 
-P5 * -FU *  *  *  *  *  *  * 
-P6 *  * +FU *  *  *  * +FU * 
-P7+FU+FU+GI+FU+FU+FU+FU * +FU
-P8 *  *  *  *  *  *  * +HI * 
-P9+KY+KE * +KI+OU+KI+GI+KE+KY
-P+00KA
-P-00KA
--
-
-==================================================
-[AIの認識] 2025-04-11 19:56:14
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI * -KE-KY
-P2 * -HI *  *  *  *  * -GI * 
-P3-FU * -FU-FU-FU-FU * -FU-FU
-P4 *  *  *  *  *  * -FU *  * 
-P5 * -FU *  *  *  *  *  *  * 
-P6 *  * +FU *  *  *  * +FU * 
-P7+FU+FU+GI+FU+FU+FU+FU * +FU
-P8 *  *  *  *  *  *  * +HI * 
-P9+KY+KE * +KI+OU+KI+GI+KE+KY
-P+00KA
-P-00KA
-+
-
-==================================================
-[AIの認識] 2025-04-11 19:56:19
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI * -KE-KY
-P2 * -HI *  *  *  *  * -GI * 
-P3-FU * -FU-FU-FU-FU * -FU-FU
-P4 *  *  *  *  *  * -FU *  * 
-P5 * -FU *  *  *  *  *  *  * 
-P6 *  * +FU *  *  *  * +FU+FU
-P7+FU+FU+GI+FU+FU+FU+FU *  * 
-P8 *  *  *  *  *  *  * +HI * 
-P9+KY+KE * +KI+OU+KI+GI+KE+KY
-P+00KA
-P-00KA
--
-
-==================================================
-[AIの認識] 2025-04-11 19:56:22
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI * -KE-KY
-P2 * -HI *  *  *  *  * -GI * 
-P3 *  * -FU-FU-FU-FU * -FU-FU
-P4-FU *  *  *  *  * -FU *  * 
-P5 * -FU *  *  *  *  *  *  * 
-P6 *  * +FU *  *  *  * +FU+FU
-P7+FU+FU+GI+FU+FU+FU+FU *  * 
-P8 *  *  *  *  *  *  * +HI * 
-P9+KY+KE * +KI+OU+KI+GI+KE+KY
-P+00KA
-P-00KA
-+
-
-==================================================
-[AIの認識] 2025-04-11 19:56:25
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI * -KE-KY
-P2 * -HI *  *  *  *  * -GI * 
-P3 *  * -FU-FU-FU-FU * -FU-FU
-P4-FU *  *  *  *  * -FU *  * 
-P5 * -FU *  *  *  *  *  *  * 
-P6+FU * +FU *  *  *  * +FU+FU
-P7 * +FU+GI+FU+FU+FU+FU *  * 
-P8 *  *  *  *  *  *  * +HI * 
-P9+KY+KE * +KI+OU+KI+GI+KE+KY
-P+00KA
-P-00KA
--
-
-==================================================
-[AIの認識] 2025-04-11 19:56:28
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI * -KE-KY
-P2 * -HI *  *  *  *  * -GI * 
-P3 *  *  * -FU-FU-FU * -FU-FU
-P4-FU * -FU *  *  * -FU *  * 
-P5 * -FU *  *  *  *  *  *  * 
-P6+FU * +FU *  *  *  * +FU+FU
-P7 * +FU+GI+FU+FU+FU+FU *  * 
-P8 *  *  *  *  *  *  * +HI * 
-P9+KY+KE * +KI+OU+KI+GI+KE+KY
-P+00KA
-P-00KA
-+
-
-==================================================
-[AIの認識] 2025-04-11 19:56:32
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI * -KE-KY
-P2 * -HI *  *  *  *  * -GI * 
-P3 *  *  * -FU-FU-FU * -FU-FU
-P4-FU * -FU *  *  * -FU *  * 
-P5 * -FU *  *  *  *  *  *  * 
-P6+FU * +FU *  *  *  * +FU+FU
-P7 * +FU+GI+FU+FU+FU+FU *  * 
-P8 *  * +KI *  *  *  * +HI * 
-P9+KY+KE *  * +OU+KI+GI+KE+KY
-P+00KA
-P-00KA
--
-
-==================================================
-[AIの認識] 2025-04-11 19:56:36
-'  9  8  7  6  5  4  3  2  1
-P1-KY * -GI-KI-OU-KI * -KE-KY
-P2 * -HI *  *  *  *  * -GI * 
-P3 *  * -KE-FU-FU-FU * -FU-FU
-P4-FU * -FU *  *  * -FU *  * 
-P5 * -FU *  *  *  *  *  *  * 
-P6+FU * +FU *  *  *  * +FU+FU
-P7 * +FU+GI+FU+FU+FU+FU *  * 
-P8 *  * +KI *  *  *  * +HI * 
-P9+KY+KE *  * +OU+KI+GI+KE+KY
-P+00KA
-P-00KA
-+
-
-==================================================
-[AIの認識] 2025-04-11 19:56:41
-'  9  8  7  6  5  4  3  2  1
-P1-KY * -GI-KI-OU-KI * -KE-KY
-P2 * -HI *  *  *  *  * -GI * 
-P3 *  * -KE-FU-FU-FU * -FU-FU
-P4-FU * -FU *  *  * -FU *  * 
-P5 * -FU *  *  *  *  *  * +FU
-P6+FU * +FU *  *  *  * +FU * 
-P7 * +FU+GI+FU+FU+FU+FU *  * 
-P8 *  * +KI *  *  *  * +HI * 
-P9+KY+KE *  * +OU+KI+GI+KE+KY
-P+00KA
-P-00KA
--
-
-==================================================
-[AIの認識] 2025-04-11 19:56:44
-'  9  8  7  6  5  4  3  2  1
-P1-KY * -GI-KI-OU-KI * -KE-KY
-P2 * -HI *  *  *  *  * -GI * 
-P3 *  * -KE-FU-FU-FU * -FU-FU
-P4-FU * -FU *  *  * -FU *  * 
-P5 *  *  *  *  *  *  *  * +FU
-P6+FU-FU+FU *  *  *  * +FU * 
-P7 * +FU+GI+FU+FU+FU+FU *  * 
-P8 *  * +KI *  *  *  * +HI * 
-P9+KY+KE *  * +OU+KI+GI+KE+KY
-P+00KA
-P-00KA
-+
-
-==================================================
-[AIの認識] 2025-04-11 19:56:47
-'  9  8  7  6  5  4  3  2  1
-P1-KY * -GI-KI-OU-KI * -KE-KY
-P2 * -HI *  *  *  *  * -GI * 
-P3 *  * -KE-FU-FU-FU * -FU-FU
-P4-FU * -FU *  *  * -FU *  * 
-P5 *  *  *  *  *  *  *  * +FU
-P6+FU+FU+FU *  *  *  * +FU * 
-P7 *  * +GI+FU+FU+FU+FU *  * 
-P8 *  * +KI *  *  *  * +HI * 
-P9+KY+KE *  * +OU+KI+GI+KE+KY
-P+00FU
-P+00KA
-P-00KA
--
-
-==================================================
-[AIの認識] 2025-04-11 19:56:51
-'  9  8  7  6  5  4  3  2  1
-P1-KY * -GI-KI-OU-KI * -KE-KY
-P2 * -HI *  *  *  *  * -GI * 
-P3 *  *  * -FU-FU-FU * -FU-FU
-P4-FU * -FU *  *  * -FU *  * 
-P5 *  *  * -KE *  *  *  * +FU
-P6+FU+FU+FU *  *  *  * +FU * 
-P7 *  * +GI+FU+FU+FU+FU *  * 
-P8 *  * +KI *  *  *  * +HI * 
-P9+KY+KE *  * +OU+KI+GI+KE+KY
-P+00FU
-P+00KA
-P-00KA
-+
-
-==================================================
-[AIの認識] 2025-04-11 19:56:54
-'  9  8  7  6  5  4  3  2  1
-P1-KY * -GI-KI-OU-KI * -KE-KY
-P2 * -HI *  *  *  *  * -GI * 
-P3 *  *  * -FU-FU-FU * -FU-FU
-P4-FU * -FU *  *  * -FU *  * 
-P5 *  *  * -KE *  *  *  * +FU
-P6+FU+FU+FU *  *  *  * +FU * 
-P7 *  *  * +FU+FU+FU+FU *  * 
-P8 * +GI+KI *  *  *  * +HI * 
-P9+KY+KE *  * +OU+KI+GI+KE+KY
-P+00FU
-P+00KA
-P-00KA
--
-
-==================================================
-[AIの認識] 2025-04-11 19:56:59
-'  9  8  7  6  5  4  3  2  1
-P1-KY * -GI-KI-OU-KI * -KE-KY
-P2 *  *  *  *  *  *  * -GI * 
-P3 *  *  * -FU-FU-FU * -FU-FU
-P4-FU * -FU *  *  * -FU *  * 
-P5 *  *  * -KE *  *  *  * +FU
-P6+FU-HI+FU *  *  *  * +FU * 
-P7 *  * +GI+FU+FU+FU+FU *  * 
-P8 *  * +KI *  *  *  * +HI * 
-P9+KY+KE *  * +OU+KI+GI+KE+KY
-P+00FU
+P6 *  * +FU *  *  *  *  *  * 
+P7+FU *  * +FU+FU+FU+FU+FU+FU
+P8 * +HI *  *  *  *  *  *  * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
 P+00KA
 P-00FU
 P-00KA
 -
 
 ==================================================
-[AIの認識] 2025-04-11 20:32:08
+[AIの認識] 2025-04-13 18:41:36
 '  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
-P2 * -HI *  *  *  *  * -KA * 
-P3-FU-FU-FU-FU-FU-FU-FU-FU-FU
-P4 *  *  *  *  *  *  *  *  * 
-P5 *  *  *  *  *  *  *  *  * 
-P6 *  *  *  *  *  *  * +FU * 
-P7+FU+FU+FU+FU+FU+FU+FU * +FU
-P8 * +KA *  *  *  *  * +HI * 
-P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
--
-
-==================================================
-[AIの認識] 2025-04-11 20:33:55
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
-P2 * -HI *  *  *  *  * -KA * 
-P3-FU-FU-FU-FU-FU-FU-FU-FU-FU
-P4 *  *  *  *  *  *  *  *  * 
-P5 *  *  *  *  *  *  *  *  * 
-P6 *  *  *  *  *  *  * +FU * 
-P7+FU+FU+FU+FU+FU+FU+FU * +FU
-P8 * +KA *  *  *  *  * +HI * 
-P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
--
-
-==================================================
-[AIの認識] 2025-04-11 20:34:01
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
-P2 * -HI *  *  *  *  * -KA * 
-P3-FU * -FU-FU-FU-FU-FU-FU-FU
-P4 * -FU *  *  *  *  *  *  * 
-P5 *  *  *  *  *  *  *  *  * 
-P6 *  *  *  *  *  *  * +FU * 
-P7+FU+FU+FU+FU+FU+FU+FU * +FU
-P8 * +KA *  *  *  *  * +HI * 
-P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
-+
-
-==================================================
-[AIの認識] 2025-04-11 20:34:15
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
-P2 * -HI *  *  *  *  * -KA * 
-P3-FU-FU-FU-FU-FU-FU-FU-FU-FU
-P4 *  *  *  *  *  *  *  *  * 
-P5 *  *  *  *  *  *  *  *  * 
-P6 *  *  *  *  *  *  * +FU * 
-P7+FU+FU+FU+FU+FU+FU+FU * +FU
-P8 * +KA *  *  *  *  * +HI * 
-P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
--
-
-==================================================
-[AIの認識] 2025-04-11 20:34:15
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
-P2 * -HI *  *  *  *  * -KA * 
-P3-FU-FU-FU-FU-FU-FU-FU-FU-FU
-P4 *  *  *  *  *  *  *  *  * 
-P5 *  *  *  *  *  *  *  *  * 
-P6 *  *  *  *  *  *  * +FU * 
-P7+FU+FU+FU+FU+FU+FU+FU * +FU
-P8 * +KA *  *  *  *  * +HI * 
-P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
--
-
-==================================================
-[AIの認識] 2025-04-11 20:34:58
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
-P2 * -HI *  *  *  *  * -KA * 
-P3-FU-FU-FU-FU-FU-FU-FU-FU-FU
-P4 *  *  *  *  *  *  *  *  * 
-P5 *  *  *  *  *  *  *  *  * 
-P6 *  *  *  *  *  *  * +FU * 
-P7+FU+FU+FU+FU+FU+FU+FU * +FU
-P8 * +KA *  *  *  *  * +HI * 
-P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
--
-
-==================================================
-[AIの認識] 2025-04-11 20:35:04
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
-P2 * -HI *  *  *  *  * -KA * 
-P3-FU * -FU-FU-FU-FU-FU-FU-FU
-P4 * -FU *  *  *  *  *  *  * 
-P5 *  *  *  *  *  *  *  *  * 
-P6 *  *  *  *  *  *  * +FU * 
-P7+FU+FU+FU+FU+FU+FU+FU * +FU
-P8 * +KA *  *  *  *  * +HI * 
-P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
-+
-
-==================================================
-[AIの認識] 2025-04-11 20:35:07
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
-P2 * -HI *  *  *  *  * -KA * 
-P3-FU * -FU-FU-FU-FU-FU-FU-FU
-P4 * -FU *  *  *  *  *  *  * 
-P5 *  *  *  *  *  *  *  *  * 
-P6 *  * +FU *  *  *  * +FU * 
-P7+FU+FU * +FU+FU+FU+FU * +FU
-P8 * +KA *  *  *  *  * +HI * 
-P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
--
-
-==================================================
-[AIの認識] 2025-04-11 20:35:10
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
-P2 * -HI *  *  *  *  * -KA * 
-P3-FU * -FU-FU-FU-FU-FU-FU-FU
-P4 *  *  *  *  *  *  *  *  * 
-P5 * -FU *  *  *  *  *  *  * 
-P6 *  * +FU *  *  *  * +FU * 
-P7+FU+FU * +FU+FU+FU+FU * +FU
-P8 * +KA *  *  *  *  * +HI * 
-P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
-+
-
-==================================================
-[AIの認識] 2025-04-11 20:35:14
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
-P2 * -HI *  *  *  *  * -KA * 
-P3-FU * -FU-FU-FU-FU-FU-FU-FU
-P4 *  *  *  *  *  *  *  *  * 
-P5 * -FU *  *  *  *  *  *  * 
-P6 *  * +FU *  *  *  * +FU * 
-P7+FU+FU+KA+FU+FU+FU+FU * +FU
-P8 *  *  *  *  *  *  * +HI * 
-P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
--
-
-==================================================
-[AIの認識] 2025-04-11 20:35:17
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
-P2 * -HI *  *  *  *  * -KA * 
+P1-KY-KE-GI-KI-OU *  * -KE-KY
+P2 * -HI *  *  *  * -KI-GI * 
 P3-FU * -FU-FU-FU-FU * -FU-FU
 P4 *  *  *  *  *  * -FU *  * 
 P5 * -FU *  *  *  *  *  *  * 
-P6 *  * +FU *  *  *  * +FU * 
-P7+FU+FU+KA+FU+FU+FU+FU * +FU
-P8 *  *  *  *  *  *  * +HI * 
+P6 * +HI+FU *  *  *  *  *  * 
+P7+FU *  * +FU+FU+FU+FU+FU+FU
+P8 *  *  *  *  *  *  *  *  * 
 P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
-+
-
-==================================================
-[AIの認識] 2025-04-11 20:35:22
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
-P2 * -HI *  *  *  *  * -KA * 
-P3-FU * -FU-FU-FU-FU * -FU-FU
-P4 *  *  *  *  *  * -FU *  * 
-P5 * -FU *  *  *  *  *  *  * 
-P6 *  * +FU *  *  *  * +FU * 
-P7+FU+FU+KA+FU+FU+FU+FU * +FU
-P8 *  * +GI *  *  *  * +HI * 
-P9+KY+KE * +KI+OU+KI+GI+KE+KY
--
-
-==================================================
-[AIの認識] 2025-04-11 20:35:26
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
-P2 * -HI *  *  *  *  *  *  * 
-P3-FU * -FU-FU-FU-FU * -FU-FU
-P4 *  *  *  *  *  * -FU *  * 
-P5 * -FU *  *  *  *  *  *  * 
-P6 *  * +FU *  *  *  * +FU * 
-P7+FU+FU-UM+FU+FU+FU+FU * +FU
-P8 *  * +GI *  *  *  * +HI * 
-P9+KY+KE * +KI+OU+KI+GI+KE+KY
-P-00KA
-+
-
-==================================================
-[AIの認識] 2025-04-11 20:35:29
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
-P2 * -HI *  *  *  *  *  *  * 
-P3-FU * -FU-FU-FU-FU * -FU-FU
-P4 *  *  *  *  *  * -FU *  * 
-P5 * -FU *  *  *  *  *  *  * 
-P6 *  * +FU *  *  *  * +FU * 
-P7+FU+FU+GI+FU+FU+FU+FU * +FU
-P8 *  *  *  *  *  *  * +HI * 
-P9+KY+KE * +KI+OU+KI+GI+KE+KY
-P+00KA
-P-00KA
--
-
-==================================================
-[AIの認識] 2025-04-11 20:35:32
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI * -KE-KY
-P2 * -HI *  *  *  *  * -GI * 
-P3-FU * -FU-FU-FU-FU * -FU-FU
-P4 *  *  *  *  *  * -FU *  * 
-P5 * -FU *  *  *  *  *  *  * 
-P6 *  * +FU *  *  *  * +FU * 
-P7+FU+FU+GI+FU+FU+FU+FU * +FU
-P8 *  *  *  *  *  *  * +HI * 
-P9+KY+KE * +KI+OU+KI+GI+KE+KY
-P+00KA
-P-00KA
-+
-
-==================================================
-[AIの認識] 2025-04-11 20:35:37
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI * -KE-KY
-P2 * -HI *  *  *  *  * -GI * 
-P3-FU * -FU-FU-FU-FU * -FU-FU
-P4 *  *  *  *  *  * -FU *  * 
-P5 * -FU *  *  *  *  *  *  * 
-P6 *  * +FU *  *  *  * +FU+FU
-P7+FU+FU+GI+FU+FU+FU+FU *  * 
-P8 *  *  *  *  *  *  * +HI * 
-P9+KY+KE * +KI+OU+KI+GI+KE+KY
-P+00KA
-P-00KA
--
-
-==================================================
-[AIの認識] 2025-04-11 20:35:41
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI * -KE-KY
-P2 * -HI *  *  *  *  * -GI * 
-P3 *  * -FU-FU-FU-FU * -FU-FU
-P4-FU *  *  *  *  * -FU *  * 
-P5 * -FU *  *  *  *  *  *  * 
-P6 *  * +FU *  *  *  * +FU+FU
-P7+FU+FU+GI+FU+FU+FU+FU *  * 
-P8 *  *  *  *  *  *  * +HI * 
-P9+KY+KE * +KI+OU+KI+GI+KE+KY
-P+00KA
-P-00KA
-+
-
-==================================================
-[AIの認識] 2025-04-11 20:35:44
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI * -KE-KY
-P2 * -HI *  *  *  *  * -GI * 
-P3 *  * -FU-FU-FU-FU * -FU-FU
-P4-FU *  *  *  *  * -FU *  * 
-P5 * -FU *  *  *  *  *  *  * 
-P6+FU * +FU *  *  *  * +FU+FU
-P7 * +FU+GI+FU+FU+FU+FU *  * 
-P8 *  *  *  *  *  *  * +HI * 
-P9+KY+KE * +KI+OU+KI+GI+KE+KY
-P+00KA
-P-00KA
--
-
-==================================================
-[AIの認識] 2025-04-11 20:35:47
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI * -KE-KY
-P2 * -HI *  *  *  *  * -GI * 
-P3 *  *  * -FU-FU-FU * -FU-FU
-P4-FU * -FU *  *  * -FU *  * 
-P5 * -FU *  *  *  *  *  *  * 
-P6+FU * +FU *  *  *  * +FU+FU
-P7 * +FU+GI+FU+FU+FU+FU *  * 
-P8 *  *  *  *  *  *  * +HI * 
-P9+KY+KE * +KI+OU+KI+GI+KE+KY
-P+00KA
-P-00KA
-+
-
-==================================================
-[AIの認識] 2025-04-11 20:35:50
-'  9  8  7  6  5  4  3  2  1
-P1-KY-KE-GI-KI-OU-KI * -KE-KY
-P2 * -HI *  *  *  *  * -GI * 
-P3 *  *  * -FU-FU-FU * -FU-FU
-P4-FU * -FU *  *  * -FU *  * 
-P5 * -FU *  *  *  *  *  *  * 
-P6+FU * +FU *  *  *  * +FU+FU
-P7 * +FU+GI+FU+FU+FU+FU *  * 
-P8 *  * +KI *  *  *  * +HI * 
-P9+KY+KE *  * +OU+KI+GI+KE+KY
-P+00KA
-P-00KA
--
-
-==================================================
-[AIの認識] 2025-04-11 20:35:54
-'  9  8  7  6  5  4  3  2  1
-P1-KY * -GI-KI-OU-KI * -KE-KY
-P2 * -HI *  *  *  *  * -GI * 
-P3 *  * -KE-FU-FU-FU * -FU-FU
-P4-FU * -FU *  *  * -FU *  * 
-P5 * -FU *  *  *  *  *  *  * 
-P6+FU * +FU *  *  *  * +FU+FU
-P7 * +FU+GI+FU+FU+FU+FU *  * 
-P8 *  * +KI *  *  *  * +HI * 
-P9+KY+KE *  * +OU+KI+GI+KE+KY
-P+00KA
-P-00KA
-+
-
-==================================================
-[AIの認識] 2025-04-11 20:35:59
-'  9  8  7  6  5  4  3  2  1
-P1-KY * -GI-KI-OU-KI * -KE-KY
-P2 * -HI *  *  *  *  * -GI * 
-P3 *  * -KE-FU-FU-FU * -FU-FU
-P4-FU * -FU *  *  * -FU *  * 
-P5 * -FU *  *  *  *  *  * +FU
-P6+FU * +FU *  *  *  * +FU * 
-P7 * +FU+GI+FU+FU+FU+FU *  * 
-P8 *  * +KI *  *  *  * +HI * 
-P9+KY+KE *  * +OU+KI+GI+KE+KY
-P+00KA
-P-00KA
--
-
-==================================================
-[AIの認識] 2025-04-11 20:36:02
-'  9  8  7  6  5  4  3  2  1
-P1-KY * -GI-KI-OU-KI * -KE-KY
-P2 * -HI *  *  *  *  * -GI * 
-P3 *  * -KE-FU-FU-FU * -FU-FU
-P4-FU * -FU *  *  * -FU *  * 
-P5 *  *  *  *  *  *  *  * +FU
-P6+FU-FU+FU *  *  *  * +FU * 
-P7 * +FU+GI+FU+FU+FU+FU *  * 
-P8 *  * +KI *  *  *  * +HI * 
-P9+KY+KE *  * +OU+KI+GI+KE+KY
-P+00KA
-P-00KA
-+
-
-==================================================
-[AIの認識] 2025-04-11 20:36:05
-'  9  8  7  6  5  4  3  2  1
-P1-KY * -GI-KI-OU-KI * -KE-KY
-P2 * -HI *  *  *  *  * -GI * 
-P3 *  * -KE-FU-FU-FU * -FU-FU
-P4-FU * -FU *  *  * -FU *  * 
-P5 *  *  *  *  *  *  *  * +FU
-P6+FU+FU+FU *  *  *  * +FU * 
-P7 *  * +GI+FU+FU+FU+FU *  * 
-P8 *  * +KI *  *  *  * +HI * 
-P9+KY+KE *  * +OU+KI+GI+KE+KY
-P+00FU
-P+00KA
-P-00KA
--
-
-==================================================
-[AIの認識] 2025-04-11 20:36:09
-'  9  8  7  6  5  4  3  2  1
-P1-KY * -GI-KI-OU-KI * -KE-KY
-P2 * -HI *  *  *  *  * -GI * 
-P3 *  *  * -FU-FU-FU * -FU-FU
-P4-FU * -FU *  *  * -FU *  * 
-P5 *  *  * -KE *  *  *  * +FU
-P6+FU+FU+FU *  *  *  * +FU * 
-P7 *  * +GI+FU+FU+FU+FU *  * 
-P8 *  * +KI *  *  *  * +HI * 
-P9+KY+KE *  * +OU+KI+GI+KE+KY
-P+00FU
-P+00KA
-P-00KA
-+
-
-==================================================
-[AIの認識] 2025-04-11 20:36:12
-'  9  8  7  6  5  4  3  2  1
-P1-KY * -GI-KI-OU-KI * -KE-KY
-P2 * -HI *  *  *  *  * -GI * 
-P3 *  *  * -FU-FU-FU * -FU-FU
-P4-FU * -FU *  *  * -FU *  * 
-P5 *  *  * -KE *  *  *  * +FU
-P6+FU+FU+FU *  *  *  * +FU * 
-P7 *  *  * +FU+FU+FU+FU *  * 
-P8 * +GI+KI *  *  *  * +HI * 
-P9+KY+KE *  * +OU+KI+GI+KE+KY
-P+00FU
-P+00KA
-P-00KA
--
-
-==================================================
-[AIの認識] 2025-04-11 20:36:17
-'  9  8  7  6  5  4  3  2  1
-P1-KY * -GI-KI-OU-KI * -KE-KY
-P2 *  *  *  *  *  *  * -GI * 
-P3 *  *  * -FU-FU-FU * -FU-FU
-P4-FU * -FU *  *  * -FU *  * 
-P5 *  *  * -KE *  *  *  * +FU
-P6+FU-HI+FU *  *  *  * +FU * 
-P7 *  * +GI+FU+FU+FU+FU *  * 
-P8 *  * +KI *  *  *  * +HI * 
-P9+KY+KE *  * +OU+KI+GI+KE+KY
-P+00FU
-P+00KA
+P+00KA00KA
 P-00FU
-P-00KA
 -
+
+==================================================
+[AIの認識] 2025-04-13 18:41:40
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI-OU *  * -KE-KY
+P2 * -HI *  *  *  * -KI-GI * 
+P3-FU * -FU-FU-FU-FU * -FU-FU
+P4 *  *  *  *  *  * -FU *  * 
+P5 *  *  *  *  *  *  *  *  * 
+P6 * -FU+FU *  *  *  *  *  * 
+P7+FU * +KE+FU+FU+FU+FU+FU+FU
+P8 *  *  *  *  *  *  *  *  * 
+P9+KY * +GI+KI+OU+KI+GI+KE+KY
+P+00KA00KA
+P-00FU
+P-00HI
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:41:45
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI *  *  * -KE-KY
+P2 * -HI *  *  * -OU-KI-GI * 
+P3-FU * -FU-FU-FU-FU * -FU-FU
+P4 *  *  *  *  *  * -FU *  * 
+P5 * +KE *  *  *  *  *  *  * 
+P6 * -FU+FU *  *  *  *  *  * 
+P7+FU *  * +FU+FU+FU+FU+FU+FU
+P8 *  *  *  *  *  *  *  *  * 
+P9+KY * +GI+KI+OU+KI+GI+KE+KY
+P+00KA00KA
+P-00FU
+P-00HI
+-
+
+==================================================
+[AIの認識] 2025-04-13 18:41:50
+'  9  8  7  6  5  4  3  2  1
+P1-KY-KE-GI-KI *  *  * -KE-KY
+P2 *  *  *  *  * -OU-KI-GI * 
+P3-FU * -FU-FU-FU-FU * -FU-FU
+P4 * -HI *  *  *  * -FU *  * 
+P5 *  * +FU *  *  *  *  *  * 
+P6 * -FU *  *  *  *  *  *  * 
+P7+FU *  * +FU+FU+FU+FU+FU+FU
+P8 *  *  *  *  *  *  *  *  * 
+P9+KY * +GI+KI+OU+KI+GI+KE+KY
+P+00KA00KA
+P-00FU
+P-00KE
+P-00HI
++
 
 ==================================================
