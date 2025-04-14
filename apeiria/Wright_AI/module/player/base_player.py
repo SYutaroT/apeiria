@@ -92,3 +92,5 @@ class BasePlayer:
             elif cmd[0] == 'quit':
                 self.quit()
                 break
+            elif cmd[0] == 'gameover':
+                self.gameover(cmd[1])

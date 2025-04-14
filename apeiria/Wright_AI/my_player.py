@@ -278,6 +278,7 @@ class MCTSPlayer(BasePlayer):
 
         # 投了チェック
         if self.root_board.is_game_over():
+            
             return 'resign', None
 
         # 入玉宣言勝ちチェック
@@ -338,8 +339,6 @@ class MCTSPlayer(BasePlayer):
         # 閾値未満の場合投了
         if bestvalue < self.resign_threshold:
             log("[go] 評価値が閾値未満のため投了")
-            # with open(log_path, "w", encoding="utf-8") as f:
-            #     f.write("[log init] ログを初期化しました\n")
             return 'resign', None
 
         bestmove_str = move_to_usi(bestmove)
@@ -352,7 +351,7 @@ class MCTSPlayer(BasePlayer):
                 "G": "金", "B": "角", "R": "飛"
             }
             piece_name = USI_PIECE_TO_NAME.get(piece_code, piece_code)
-            log(f"[go] 打ち駒: {piece_name} を {to_sq} に打つ（USI: {bestmove_str}）")
+            log(f"[go] 打ち駒: {piece_name} を {to_sq} に打つ（USI: {bestmove_str} 評価値: {bestvalue:.2f}）")
             
         else:
             try:
@@ -360,7 +359,7 @@ class MCTSPlayer(BasePlayer):
                 piece = self.root_board.pieces[from_sq]  # ← ここが重要！
                 piece_type = piece & 0b11111
                 piece_name = PIECE_NAME.get(piece_type, "？")
-                log(f"[go] 指し手: {bestmove_str}（{piece_name}）")
+                log(f"[go] 指し手: {bestmove_str}（{piece_name}）評価値: {bestvalue:.2f}" )
             except Exception as e:
                 log(f"[go] 指し手: {bestmove_str}（駒種取得失敗: {e}）")
         return bestmove_str, move_to_usi(ponder_move) if ponder_move else None
@@ -451,6 +450,8 @@ class MCTSPlayer(BasePlayer):
                 if elapsed_time > self.last_pv_print_time + self.pv_interval:
                     self.last_pv_print_time = elapsed_time
                     self.get_bestmove_and_print_pv()
+    def gameover(self, result):
+        log(f"[gameover] 対局終了: {result}")
 
     # UCT探索
     def uct_search(self, board, current_node, trajectories):

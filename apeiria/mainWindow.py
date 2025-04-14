@@ -32,14 +32,9 @@ class MainWindow(QtWidgets.QMainWindow):
         self.question_down = False
         self.speak = speak.Speak()
 #!---------------------------------
-        self.process = QtCore.QProcess(self)
+        self.log_watch_process = QtCore.QProcess(self)
+        self.log_watch_process.readyReadStandardOutput.connect(self.handle_log_output)
 
-        
-
-        # # 将棋AIからの出力を表示するためのウィジェット（ログ表示用）を追加
-        # self.shogiOutput = QtWidgets.QPlainTextEdit(self)
-        # self.shogiOutput.setReadOnly(True)
-        # self.ui.verticalLayout.addWidget(self.shogiOutput)
     def putlog(self, str):
         self.ui.listWidget.addItem(str)
         self.log.append(str+"\n")
@@ -120,19 +115,23 @@ class MainWindow(QtWidgets.QMainWindow):
             self.speak.speak_voice(" ")
             self.speak.speak_voice("勝負です")
             fc = "1"
-            python_path = sys.executable
-            syougi_path = os.path.join("apeiria","Wright_AI", "shogi_gui.py")
             self.ui.lineEdit.clear()
-            from PyQt5.QtCore import QProcess
-            self.process = QProcess(self)  # QProcess オブジェクトを明示的に作成
+            base_dir = os.path.dirname(__file__)
+            log_watch_path = os.path.abspath(os.path.join(base_dir, "Wright_AI", "log", "watch_log.py"))
 
-            # 出力・エラー出力をハンドリング（任意）
-            self.process.readyReadStandardOutput.connect(self.handle_shogi_output)
-            self.process.readyReadStandardError.connect(self.handle_shogi_error)
 
-            # 起動（コマンドラインはリストで）
-            self.process.start(python_path, [syougi_path])
 
+            # stderrもstdoutとまとめて取得
+            self.log_watch_process.setProcessChannelMode(QtCore.QProcess.MergedChannels)
+
+            # 起動
+            self.log_watch_process.start(sys.executable, [log_watch_path])
+
+            # 起動チェック
+            if not self.log_watch_process.waitForStarted(3000):  # 最大3秒待つ
+                print("❌ log_watch.py の起動に失敗しました")
+            else:
+                print("✅ log_watch.py が正常に起動しました")
         else:
             response = self.apeiria.dialogue(value)
             talkword = response[0]
@@ -171,45 +170,14 @@ class MainWindow(QtWidgets.QMainWindow):
 
 
 #-------------------------------------------------------------
-
-    def handle_shogi_output(self):
-        output = bytes(self.process.readAllStandardOutput()).decode("utf-8").strip()
+    def handle_log_output(self):
+        output = bytes(self.log_watch_process.readAllStandardOutput()).decode("utf-8").strip()
         for line in output.splitlines():
-            if line.startswith("chatbot_output:"):
-                content = line.replace("chatbot_output:", "").strip()
+            if line:
+                self.ui.labelResponce.setText(line)
+                self.putlog("log> " + line)
+                print(line)
+    def closeEvent(self, event):
+        self.log_watch_process.kill()
+        super().closeEvent(event)
 
-                # 例: "move=7g7f value=0.83" を分解して取得
-                parts = dict(pair.split('=') for pair in content.split())
-                move = parts.get("move")
-                value = float(parts.get("value", 0.5))  # デフォルトは0.5に
-                from_sq = move[:2]
-                to_sq = move[2:4]
-                self.speak.speak_voice("")
-                self.ui.labelResponce.setText(f"{from_sq} から {to_sq} に指しました")
-                self.speak.speak_voice(f"{from_sq} から {to_sq} に指しました")
-
-                # チャットに表示
-                print(value)
-                # 勝率から疑似感情（例: 期待・不安）を処理
-                if value > 0.7:
-                    fc = "4"  # 喜び・強気
-                    em = "15"
-                elif value < 0.3:
-                    fc = "3"  # 不安・悲しみ
-                    em = "0"
-                else:
-                    fc = "5"  # 中立
-                    em = "7"
-
-                self.change_fice(fc)
-                self.change_looks()
-                self.speak.speak_voice(" ")
-                # self.speak.speak_voice(f"{move} に指しました。現在の評価は {value:.2f} です。")
-
-    def handle_shogi_error(self):
-        error = bytes(self.process.readAllStandardError()).decode("utf-8").strip()
-        # if error:
-        #     self.error_label.setText(f"エラー: {error}")
-        #     self.ui.labelResponce.setText(f"⚠️ エラーが発生しました：{error}")
-        #     self.speak.speak_voice(" ")
-        #     self.speak.speak_voice(f"エラーが発生しました。{error}")
